@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            scroll-behavior: smooth;
+        }
+        header {
+            background: #333;
+            color: white;
+            padding: 15px 0;
+            text-align: center;
+            position: fixed;
+            width: 100%;
+            top: 0;
+            left: 0;
+            z-index: 1000;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+        nav ul {
+            list-style: none;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            gap: 25px;
+        }
+        nav ul li {
+            display: inline;
+        }
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-size: 18px;
+            padding: 12px 18px;
+            transition: background 0.3s, color 0.3s;
+            border-radius: 8px;
+        }
+        nav ul li a:hover {
+            background: white;
+            color: #333;
+        }
+        .slide {
+            padding: 100px 50px;
+            text-align: center;
+            background: white;
+            margin: 100px 20px 20px;
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+            border-radius: 12px;
+            transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+        }
+        .slide:hover {
+            transform: scale(1.05);
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+        }
+        h2 {
+            color: #333;
+        }
+        p, ul {
+            font-size: 18px;
+            color: #555;
+        }
+        .contact-form {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 10px;
+            margin-top: 20px;
+        }
+        .contact-form input, .contact-form textarea {
+            width: 80%;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        .contact-form button {
+            background: #333;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            cursor: pointer;
+            transition: background 0.3s;
+        }
+        .contact-form button:hover {
+            background: #555;
+        }
+        footer {
+            background: #333;
+            color: white;
+            text-align: center;
+            padding: 15px;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>My Portfolio</h1>
+        <nav>
+            <ul>
+                <li><a href="#myself">Myself</a></li>
+                <li><a href="#education">Education</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#achievements">Achievements</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <section id="myself" class="slide">
+        <h2>About Me</h2>
+        <p>I am Jagadeesh G, a passionate web developer with a strong interest in coding and software development.</p>
+    </section>
+
+    <section id="education" class="slide">
+        <h2>Education</h2>
+        <p>Completed Intermediate with a focus on computer science and mathematics.</p>
+    </section>
+    
+    <section id="skills" class="slide">
+        <h2>Skills</h2>
+        <ul>
+            <li>Python</li>
+            <li>Java</li>
+            <li>HTML & CSS</li>
+            <li>JavaScript</li>
+        </ul>
+    </section>
+
+    <section id="achievements" class="slide">
+        <h2>Achievements</h2>
+        <ul>
+            <li>2-1 Semester Topper in Cyber Security</li>
+            <li>Developed a personal portfolio website</li>
+        </ul>
+    </section>
+
+    <section id="projects" class="slide">
+        <h2>Projects</h2>
+        <ul>
+            <li>Portfolio Website - A personal project showcasing my skills and experience.</li>
+            <li>Weather App - A web application that fetches real-time weather data.</li>
+            <li>Task Manager - A simple to-do app with a database backend.</li>
+        </ul>
+    </section>
+    
+    <section id="contact" class="slide">
+        <h2>Contact</h2>
+        <p>Email: jagadeeshg@example.com</p>
+        <form class="contact-form">
+            <input type="text" placeholder="Your Name" required>
+            <input type="email" placeholder="Your Email" required>
+            <textarea placeholder="Your Message" rows="5" required></textarea>
+            <button type="submit">Send Message</button>
+        </form>
+    </section>
+    
+    <footer>
+        <p>&copy; 2025 Jagadeesh G. All Rights Reserved.</p>
+    </footer>
+</body>
+</html>
